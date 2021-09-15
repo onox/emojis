@@ -1,5 +1,5 @@
 [![Build status](https://github.com/onox/emojis/actions/workflows/build.yaml/badge.svg)](https://github.com/onox/emojis/actions/workflows/build.yaml)
-[![Alire json](https://img.shields.io/endpoint?url=https://alire.ada.dev/badges/json.json)](https://alire.ada.dev/crates/emojis.html)
+[![Alire](https://img.shields.io/endpoint?url=https://alire.ada.dev/badges/emojis.json)](https://alire.ada.dev/crates/emojis.html)
 [![License](https://img.shields.io/github/license/onox/emojis.svg?color=blue)](https://github.com/onox/emojis/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/onox/emojis.svg)](https://github.com/onox/emojis/releases/latest)
 [![IRC](https://img.shields.io/badge/IRC-%23ada%20on%20libera.chat-orange.svg)](https://libera.chat)
@@ -38,6 +38,38 @@ Prints:
 ```
 
 The function `Labels` returns a list of all the labels.
+
+The default value for the parameter `Mappings` is `Emojis.Text_Emojis` and contains
+the following:
+
+| Text | Emoji |
+|------|-------|
+|  :)  | 🙂    |
+|  ;)  | 😉    |
+|  :D  | 😀    |
+| :'D  | 😅    |
+| :')  | 😅    |
+| :")  | 😂    |
+|  XD  | 😆    |
+| X'D  | 🤣    |
+|  :o  | 😮    |
+|  :O  | 😮    |
+| >:(  | 😠    |
+|  :(  | 🙁    |
+| -_-  | 😒    |
+| :'(  | 😢    |
+| :"(  | 😭    |
+|  :p  | 😛    |
+|  :P  | 😛    |
+|  ;p  | 😜    |
+|  ;P  | 😜    |
+|  B)  | 😎    |
+| :+)  | 🤡    |
+| :(=  | 🥵     |
+| o_O  | 🤨    |
+| O_o  | 🤨    |
+| XO=  | 🤮    |
+|  <3  | 🧡    |
 
 ## Dependencies
 
