@@ -110,6 +110,10 @@ refers to this license:
 
     SPDX-License-Identifier: Apache-2.0
 
+Names and Unicode codepoints in package `Emojis` are from [emoji-data][url-emoji-data]
+project.
+
   [url-alire]: https://alire.ada.dev/
   [url-apache]: https://opensource.org/licenses/Apache-2.0
   [url-contributing]: /CONTRIBUTING.md
+  [url-emoji-data]: https://github.com/iamcal/emoji-data

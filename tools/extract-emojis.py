@@ -43,10 +43,10 @@ with open(args.file) as f:
     points_3 = [np for np in name_points if len(np[1]) == 3]
 
     print("   Name_Emojis_3 : constant array (Positive range <>) of Text_3_Points_Pair :=")
-    print_pair(*points_3[0], prefix="(") 
+    print_pair(*points_3[0], prefix="(")
     for name, points in points_3[1:-1]:
         print_pair(name, points)
-    print_pair(*points_3[-1], suffix=");") 
+    print_pair(*points_3[-1], suffix=");")
 
     print()
 
