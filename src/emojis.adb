@@ -82,8 +82,8 @@ package body Emojis is
       return "";
    end Value;
 
-   function Replace_Labels (Text : String) return String is
-      Text_List : constant String_List := Strings.Split (Text, Separator => ":");
+   procedure Replace_Labels (Text : in out SU.Unbounded_String) is
+      Text_List : constant String_List := Strings.Split (+Text, Separator => ":");
       Result    : SU.Unbounded_String;
    begin
       for Index in Text_List'Range loop
@@ -107,13 +107,13 @@ package body Emojis is
          end if;
       end loop;
 
-      return +Result;
+      Text := Result;
    end Replace_Labels;
 
-   function Replace_Mappings
+   function Replace
      (Text        : String;
-      Mappings    : Label_Mappings;
-      Completions : Completion_Mappings) return String
+      Mappings    : Label_Mappings      := Text_Emojis;
+      Completions : Completion_Mappings := (1 .. 0 => <>)) return String
    is
       Slices : String_List := Strings.Split (Text, Separator => " ");
 
@@ -132,18 +132,14 @@ package body Emojis is
                   end if;
                end if;
             end loop;
+
+            if Completions'Length = 0 or not Is_Completion then
+               Replace_Labels (Slices (Index));
+            end if;
          end;
       end loop;
 
       return Strings.Join (Slices, " ");
-   end Replace_Mappings;
-
-   function Replace
-     (Text        : String;
-      Mappings    : Label_Mappings      := Text_Emojis;
-      Completions : Completion_Mappings := (1 .. 0 => <>)) return String is
-   begin
-      return Replace_Labels (Replace_Mappings (Text, Mappings, Completions));
    end Replace;
 
 end Emojis;

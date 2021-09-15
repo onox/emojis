@@ -66,7 +66,7 @@ package Emojis is
       (+"<3", +"orange_heart"));
 
    Lower_Case_Text_Emojis : constant Completion_Mappings :=
-     (+":o", +":p");
+     (+":o", +":p", +"XD");
 
    ----------------------------------------------------------------------------
 
