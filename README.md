@@ -8,6 +8,7 @@
 # emojis
 
 An Ada 2012 library to replace names between colons with emojis.
+Supports Emoji version 13.1.
 
 ## Usage
 
