@@ -11,8 +11,9 @@ maintainers-logins = ["onox"]
 
 executables = ["test"]
 
-[configuration]
-disabled = true
+[build-switches]
+validation.compile_checks = "warnings"
+"*".style_checks = ["-gnatygAO-Is"]
 
 [[depends-on]]
 emojis = "^1.0.0"
