@@ -1,6 +1,6 @@
 name = "tests"
 description = "Example showing replacing names between colons with emojis"
-version = "1.0.0"
+version = "1.0.1"
 website = "https://github.com/onox/emojis"
 licenses = "Apache-2.0"
 tags = ["emoji", "string", "text"]
