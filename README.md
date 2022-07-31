@@ -80,16 +80,6 @@ In order to build the library, you need to have:
 
  * [Alire][url-alire]
 
-## Installing dependencies on Ubuntu
-
-Install the dependencies using apt:
-
-```sh
-$ sudo apt install gnat gprbuild
-```
-
-and then install Alire.
-
 ## Using the library
 
 Use the library in your crates as follows:
